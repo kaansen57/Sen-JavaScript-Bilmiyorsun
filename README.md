@@ -2,11 +2,11 @@
 
 JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
 
-<a href="http://shop.oreilly.com/product/0636920039303.do"><img src="up %26 going/cover.jpg" width="75"></a>&nbsp;
-<a href="http://shop.oreilly.com/product/0636920026327.do"><img src="scope %26 closures/cover.jpg" width="75"></a>&nbsp;
-<a href="http://shop.oreilly.com/product/0636920033738.do"><img src="this %26 object prototypes/cover.jpg" width="75"></a>&nbsp;
-<a href="http://shop.oreilly.com/product/0636920033745.do"><img src="types %26 grammar/cover.jpg" width="75"></a>&nbsp;
-<a href="http://shop.oreilly.com/product/0636920033752.do"><img src="async %26 performance/cover.jpg" width="75"></a>&nbsp;
+<a href="up & going/README.md"><img src="up %26 going/cover.jpg" width="75"></a>&nbsp;
+<a href="scope & closures/README.md"><img src="scope %26 closures/cover.jpg" width="75"></a>&nbsp;
+<a href="this & object prototypes/README.md"><img src="this %26 object prototypes/cover.jpg" width="75"></a>&nbsp;
+<a href="types & grammar/README.md"><img src="types %26 grammar/cover.jpg" width="75"></a>&nbsp;
+<a href="async & performance/README.md"><img src="async %26 performance/cover.jpg" width="75"></a>&nbsp;
 
 ## Başlıklar
 
