@@ -1,6 +1,7 @@
 # Sen JavaScript Bilmiyorsun (kitap serisi)
 
 JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
+
 <a href="http://shop.oreilly.com/product/0636920039303.do"><img src="up %26 going/cover.jpg" width="75"></a>&nbsp;
 <a href="http://shop.oreilly.com/product/0636920026327.do"><img src="scope %26 closures/cover.jpg" width="75"></a>&nbsp;
 <a href="http://shop.oreilly.com/product/0636920033738.do"><img src="this %26 object prototypes/cover.jpg" width="75"></a>&nbsp;
