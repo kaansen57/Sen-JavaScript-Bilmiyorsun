@@ -11,6 +11,10 @@ JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
 * ["Async & Performance"](async & performance/README.md#you-dont-know-js-async--performance), Published: [Buy Now](http://shop.oreilly.com/product/0636920033752.do)
 * ["ES6 & Beyond"](es6 & beyond/README.md#you-dont-know-js-es6--beyond) (in progress)
 
+## Çeviri Önsözü
+
+Bu çalışma Kyle Simpson tarafından yazılmış olan "You Don't Know JS" serisinin Türkçe çevirisidir. Kitapları orijinal dilinde satın almak veya kitaplara çeviri hatası dışındaki konularda katkıda bulunmak için lütfen ana repoyu ziyaret ediniz. Bu repoya çeviri hataları / düzeltmeleri veya iyileştirmeleri için PR gönderebilirsiniz. 
+
 ## Çalışma 
 
 The content for these books derives heavily from a series of training materials I teach professionally (in both public and private-corporate workshop format), called "Advanced JS: The 'What You Need To Know' Parts".
@@ -19,7 +23,7 @@ If you like this content and would like to contact me regarding conducting train
 
 [http://getify.me](http://getify.me)
 
-## Katılım
+## Katkıda Bulunma
 
 Any contributions you make to this effort **are of course greatly appreciated**.
 
