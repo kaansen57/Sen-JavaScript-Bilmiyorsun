@@ -9,7 +9,7 @@ JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
 * ["this ve Obje Prototype'ları"](this & object prototypes/README.md#you-dont-know-js-this--object-prototypes), *(orj: 'this & Object Prototypes')*
 * ["Tipler ve Grammer"](types & grammar/README.md#you-dont-know-js-types--grammar), *(orj: 'Types & Grammar')*
 * ["Asenkron ve Performans"](async & performance/README.md#you-dont-know-js-async--performance), *(orj: 'Async & Performance')*
-* "ES6 ve Ötesi" (yazımı sürüyor)
+* "ES6 ve Ötesi" (yazımı sürüyor), *(orj: 'ES6 & Beyond')* 
 
 ## Çeviri Önsözü
 
