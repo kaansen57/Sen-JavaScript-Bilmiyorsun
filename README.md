@@ -4,30 +4,16 @@ JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
 
 ## Başlıklar
 
-* ["Up & Going"](up & going/README.md#you-dont-know-js-up--going), Published: [Buy Now](http://shop.oreilly.com/product/0636920039303.do), ebook format is free!
-* ["Scope & Closures"](scope & closures/README.md#you-dont-know-js-scope--closures), Published: [Buy Now](http://shop.oreilly.com/product/0636920026327.do)
-* ["this & Object Prototypes"](this & object prototypes/README.md#you-dont-know-js-this--object-prototypes), Published: [Buy Now](http://shop.oreilly.com/product/0636920033738.do)
-* ["Types & Grammar"](types & grammar/README.md#you-dont-know-js-types--grammar), Published: [Buy Now](http://shop.oreilly.com/product/0636920033745.do)
-* ["Async & Performance"](async & performance/README.md#you-dont-know-js-async--performance), Published: [Buy Now](http://shop.oreilly.com/product/0636920033752.do)
-* ["ES6 & Beyond"](es6 & beyond/README.md#you-dont-know-js-es6--beyond) (in progress)
+* ["Giriş ve ilerleme"](up & going/README.md#you-dont-know-js-up--going), *(orj: 'Up & Going')*
+* ["Scope ve Closure'lar"](scope & closures/README.md#you-dont-know-js-scope--closures), *(orj: 'Scope & Closures')*
+* ["this ve Obje Prototype'ları"](this & object prototypes/README.md#you-dont-know-js-this--object-prototypes), *(orj: 'this & Object Prototypes')*
+* ["Tipler ve Grammer"](types & grammar/README.md#you-dont-know-js-types--grammar), *(orj: 'Types & Grammar')*
+* ["Asenkron ve Performans"](async & performance/README.md#you-dont-know-js-async--performance), *(orj: 'Async & Performance')*
+* "ES6 ve Ötesi" (yazımı sürüyor)
 
 ## Çeviri Önsözü
 
 Bu çalışma Kyle Simpson tarafından yazılmış olan "You Don't Know JS" serisinin Türkçe çevirisidir. Kitapları orijinal dilinde satın almak veya kitaplara çeviri hatası dışındaki konularda katkıda bulunmak için lütfen ana repoyu ziyaret ediniz. Bu repoya çeviri hataları / düzeltmeleri veya iyileştirmeleri için PR gönderebilirsiniz. 
-
-## Çalışma 
-
-The content for these books derives heavily from a series of training materials I teach professionally (in both public and private-corporate workshop format), called "Advanced JS: The 'What You Need To Know' Parts".
-
-If you like this content and would like to contact me regarding conducting training on these, or other various JS/HTML5/node.js topics, please reach out to me through any of these channels listed here:
-
-[http://getify.me](http://getify.me)
-
-## Katkıda Bulunma
-
-Any contributions you make to this effort **are of course greatly appreciated**.
-
-However, if you choose to contribute content (not just typo corrections) to this repo, you agree that you're giving me a non-exclusive license to use that content for the book series, as I (and O'Reilly) deem appropriate. You probably guessed that already, but we just have to make the lawyers happy by explicitly stating it. So: blah, blah, blah... :)
 
 ## Lisans & Telif Hakkı
 
