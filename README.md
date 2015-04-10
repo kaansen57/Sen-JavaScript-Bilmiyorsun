@@ -1,4 +1,4 @@
-# Sen JavaScript Bilmiyorsun (kitap serisi)
+# Sen Var JavaScript Bilmemek (kitap serisi)
 
 JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
 
