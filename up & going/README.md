@@ -14,5 +14,5 @@
 * [Önsöz](../preface.md)
 * [Bölüm 1: Programlamaya Giriş](ch1.md)
 * [Bölüm 2: JavaScript'e Giriş](ch2.md)
-* [Bölüm 3: SJB'a Giriş](ch3.md)
+* [Bölüm 3: SJSB'a Giriş](ch3.md)
 * [Ek A: Teşekkürler!](apA.md)
