@@ -1,18 +1,18 @@
-# You Don't Know JS: Up & Going
+# Sen JavaScript Bilmiyorsun: Giriş ve İlerleme
 
 <img src="cover.jpg" width="300">
 
 -----
 
-**Purchase digital/print copy from O'Reilly**
+**Orijinal dilindeki dijital hali/baskısı O'Reilly üzerinden satın alınabilir.**
 
 -----
 
-[Table of Contents](toc.md)
+[İçindekiler](toc.md)
 
-* [Foreword](foreword.md) (by [Jenn Lukas](http://jennlukas.com))
-* [Preface](../preface.md)
-* [Chapter 1: Into Programming](ch1.md)
-* [Chapter 2: Into JavaScript](ch2.md)
-* [Chapter 3: Into YDKJS](ch3.md)
-* [Appendix A: Thank You's!](apA.md)
+* [Hakkında](foreword.md) ([Jenn Lukas](http://jennlukas.com))
+* [Önsöz](../preface.md)
+* [Bölüm 1: Programlamaya Giriş](ch1.md)
+* [Bölüm 2: JavaScript'e Giriş](ch2.md)
+* [Bölüm 3: SJB'a Giriş](ch3.md)
+* [Ek A: Teşekkürler!](apA.md)
