@@ -6,7 +6,7 @@
 * Önsöz
 * Bölüm 1: Programlamaya Giriş
 	* Kod
-	* Kendiniz Deneyin
+	* Kendin Dene
 	* Operatörler *(Operators)*
 	* Değerler ve Tipler
 	* Kod Yorumları
