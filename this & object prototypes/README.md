@@ -1,22 +1,22 @@
-# You Don't Know JS: *this* & Object Prototypes
+# Sen JavaScript Bilmiyorsun: *this* & Obje Prototype'ları
 
 <img src="cover.jpg" width="300">
 
 -----
 
-**[Purchase digital/print copy from O'Reilly](http://shop.oreilly.com/product/0636920033738.do)**
+**[Bu kitabın orjinalini O'Reilly](http://shop.oreilly.com/product/0636920033738.do) adresinden alabilirsiniz**
 
 -----
 
-[Table of Contents](toc.md)
+[İçindekiler](toc.md)
 
-* [Foreword](foreword.md) (by [Nick Berardi](https://github.com/nberardi))
-* [Preface](../preface.md)
-* [Chapter 1: *this* Or That?](ch1.md)
-* [Chapter 2: *this* All Makes Sense Now!](ch2.md)
-* [Chapter 3: Objects](ch3.md)
-* [Chapter 4: Mixing (Up) "Class" Objects](ch4.md)
-* [Chapter 5: Prototypes](ch5.md)
-* [Chapter 6: Behavior Delegation](ch6.md)
-* [Appendix A: ES6 *class*](apA.md)
-* [Appendix B: Thank You's!](apB.md)
+* [Hakkında](foreword.md) (by [Nick Berardi](https://github.com/nberardi))
+* [Önsöz](../preface.md)
+* [Bölüm 1: *this* Or That?](ch1.md)
+* [BÖlüm 2: *this* Şimdi Anlam Kazandı!](ch2.md)
+* [Bölüm 3: Objeler](ch3.md)
+* [Bölüm 4: Mixing (Up) "Class" Objects](ch4.md)
+* [Bölüm 5: Prototypelar](ch5.md)
+* [Bölüm 6: Behavior Delegation](ch6.md)
+* [Ek A: ES6 *class*](apA.md)
+* [Ek B: Teşekkürler!](apB.md)
