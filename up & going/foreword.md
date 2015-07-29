@@ -1,9 +1,9 @@
-# You Don't Know JS: Up & Going
-# Foreword
+# JavaScript Bilmiyorsun: Giriş ve İlerleme
+# Önsöz
 
-What was the last new thing you learned?
+Öğrendiğiniz son yeni şey ne oldu?
 
-Perhaps it was a foreign language, like Italian or German. Or maybe it was a graphics editor, like Photoshop. Or a cooking technique or woodworking or an exercise routine. I want you to remember that feeling when you finally got it: the lightbulb moment. When things went from blurry to crystal clear, as you mastered the table saw or understood the difference between masculine and feminine nouns in French. How did it feel? Pretty amazing, right?
+Belki bir yabancı dildi, İtalyanca veya Almanca gibi. Ya da belki bir resim işleyicisiydi, Photoshop gibi. Veya bir yemek pişirme tekniği, ahşap işçiliği ya da bir egzersiz düzeni. Size bunu başardığınızdaki hislerinizi hatırlatmak istiyorum: ampul yanma anı. Elektrikli testerede ustalaştığınızda veya Fransızca'daki maskülen ve feminen isimler arasındaki farkı kavradığınızda oluşan birşeylerin bulanıklıktan kristal berraklığına ulaşma anı. O his nasıldı? Bayağı hayret verici, değil mi?
 
 Now I want you to travel back a little bit further in your memory to right before you learned your new skill. How did *that* feel? Probably slightly intimidating and maybe a little bit frustrating, right? At one point, we all did not know the things that we know now and that’s totally OK; we all start somewhere. Learning new material is an exciting adventure, especially if you are looking to learn the subject efficiently.
 
