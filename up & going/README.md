@@ -10,7 +10,7 @@
 
 [İçindekiler](toc.md)
 
-* [Hakkında](foreword.md) ([Jenn Lukas](http://jennlukas.com))
+* [Takdim](foreword.md) ([Jenn Lukas](http://jennlukas.com))
 * [Önsöz](../preface.md)
 * [Bölüm 1: Programlamaya Giriş](ch1.md)
 * [Bölüm 2: JavaScript'e Giriş](ch2.md)

@@ -1,5 +1,5 @@
 # JavaScript Bilmiyorsun: Giriş ve İlerleme
-# Önsöz
+# Takdim
 
 Öğrendiğiniz son yeni şey ne oldu?
 
