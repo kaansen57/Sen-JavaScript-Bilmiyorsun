@@ -1,11 +1,11 @@
 # You Don't Know JS: Types & Grammar
 # Foreword
 
-It was once said, "JavaScript is the only language developers don't learn to use before using it."
+Bir zamanlar şöyle söyleniyordu, "Javascript, geliştiriciler tarafından kullanılmadan önce öğrenilmesine gerek duyulmayan tek dildir".
 
-I laugh each time I hear that quote because it was true for me and I suspect it was for many other developers. JavaScript, and maybe even CSS and HTML, were not a core computer science language taught at college in the Internet's early days, so personal development was very much based on the budding developer's search and "view source" abilities to piece together these basic web languages.
+Bu sözü her duyduğumda gülüyorum, çünkü benim için doğruydu ve diğer birçok geliştirici içinde geçerli olduğunu düşünüyorum. Javascript ve belki CSS ve HTML, Internet'in ilk günlerinde; üniversitelerin Bilgisayar Mühendisliğinde öğretilen birer çekirdek diller değildi, yani kişisel gelişim; mesleğinde ilerlemek isteyen geliştiriciler için araştırmaya ve web dillerini bir araya getirmek için "kaynağını görüntüle" yeteneklerine dayalıydı.
 
-I still remember my first high school website project. The task was to create any type of web store, and me being a James Bond fan, I decided to create a Goldeneye store. It had everything: the Goldeneye midi theme song playing in the background, a JavaScript-powered crosshairs following the mouse around the screen, and a gunshot sound that played upon every click. Q would have been proud of this masterpiece of a website.
+Lise'de yaptığım ilk web projesini hala hatırlıyorum. Görev herhangi bir tipte web mağazası oluşturmaktı, ve ben James Bond fanıydım. Goldeneye mağazası oluşturmaya karar verdim. Arkaplanda The Goldeneye midi şarkısı çalıyordu. Javascript'in gücüyle ekranın etrafında fareyi takip eden hedefler ve her tıklamada ses çıkaran kurşun sesleri. Q would have been proud of this masterpiece of a website.
 
 I tell that story because I did back then what many developers are doing today: I copied and pasted chunks of JavaScript code into my project without having a clue what's actually happening. The widespread use of JavaScript toolkits like jQuery have, in their own small way, perpetuated this pattern of nonlearning of core JavaScript.
 
