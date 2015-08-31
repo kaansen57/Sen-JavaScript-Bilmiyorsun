@@ -1,11 +1,22 @@
 # You Don't Know JS: Up & Going
+
+# Sen JS Bilmiyorsun: Giriş
+
 # Chapter 1: Into Programming
 
-Welcome to the *You Don't Know JS* (*YDKJS*) series.
+# Bölüm 1: Programlamaya Giriş
 
-*Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.
+~~Welcome to the *You Don't Know JS* (*YDKJS*) series.~~
 
-This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.
+*Sen JS Bilmiyorsun* (*YDKJS*) serisine hoş geldiniz.
+
+~~*Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.~~
+
+*Giriş* programlamanın temel kavramlarına bir giriş yapmaktadır -- bunu yaparken Javascript programlama dilini (sıklıkla JS olarak kısaltılmaktadır) özellikle ağırlıklı olarak kullanacağız -- aynı zamanda sonraki bölüm ve seriler hakkında bilgi ve oryantasyon sağlamaktadır. Özellikle de eğer programlamaya ve/veya JavaScript diline yeni iseniz bu kitap bu alana *Giriş*  yapabilmeniz için size gerekenleri özetleyecektir.
+
+~~This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.~~
+
+Bu kitap programlamanın temel kavramlarını ileri düzeyde anlatarak başlamaktadır. *YDKJS*, programlama alanında az tecrübeli veya tecrübesiz olan  ve programlamayı JavaScript merceğinden anlamak isteyenler için yazılmıştır.
 
 ~~Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.~~
 
@@ -163,13 +174,17 @@ Bu bölüm programlama kavramlarını kısa kod parçaları ile tanıtacaktır. 
 
 ~~**Tip:** Typically, you can launch the developer console with a keyboard shortcut or from a menu item. For more detailed information about launching and using the console in your favorite browser, see "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). To type multiple lines into the console at once, use `<shift> + <enter>` to move to the next new line. Once you hit `<enter>` by itself, the console will run everything you've just typed.~~
 
-Let's get familiar with the process of running code in the console. First, I suggest opening up an empty tab in your browser. I prefer to do this by typing `about:blank` into the address bar. Then, make sure your developer console is open, as we just mentioned.
+~~Let's get familiar with the process of running code in the console. First, I suggest opening up an empty tab in your browser. I prefer to do this by typing `about:blank` into the address bar. Then, make sure your developer console is open, as we just mentioned.~~
 
-Now, type this code and see how it runs:
+~~Now, type this code and see how it runs:~~
 
 Bölümde ilerlerken, yeterince açıklayıcı olmadığını düşündüğünüz kısımları bir kaç defa tekrarlama gereği duyabilirsiniz. Bu kısımları kendiniz yazarak denemeniz de size yardımcı olacaktır. Bunu yapmanın en kolay yolu size en yakın tarayıcıda geliştirici araçları konsolunu açmaktır (Firefox, Chrome, IE, vb.).
 
 **İpucu:** Genelde geliştirici araçları konsolunu klavyeden bir kısayol tuşu ile açabileceğiniz gibi bir menü elemanından da başlatabilirsiniz. Konsolun çalıştırılması ve kullanımı hakkında daha ayrıntılı bilgi için (http://blog.teamtreehouse.com/mastering-developer-tools-console) adresinde bulunan "Mastering The Developer Tools Console" a bakabilirsiniz. Konsolda bir seferde birden fazla satır yazabilmek için `<shift> + <enter>` kullanarak yeni satıra geçebilirsiniz. Yalnız `<enter>` tuşuna basmanız durumunda konsole yazdıgınız satırı çalıştıracaktır.
+
+Gelin şimdi konsolda kod çalıştırma prosesine biraz yakından bakalım. Öncelikle tarayıcınızda boş bir sekme açmanızı öneririm. Ben bunu adres çubuğuna `about:blank` yazarak yapmayı tercih ediyorum. Daha sonra geliştirici araçları konsolunu açtığınızdan emin olun
+
+Şimdi, nasıl çalıştığını görmek için aşağıdaki kodu yazın:
 
 ```js
 a = 21;
@@ -181,21 +196,37 @@ console.log( b );
 
 Typing the preceding code into the console in Chrome should produce something like the following:
 
+Üstteki kodu konsola yazdığınız zaman Chrome aşağıdaki gibi bir sonuç üretmeli:
+
 <img src="fig1.png" width="500">
 
-Go on, try it. The best way to learn programming is to start coding!
+~~Go on, try it. The best way to learn programming is to start coding!~~
+
+Siz de çekinmeyin ve kodu deneyin. Programlama öğrenmenin en iyi yolu kod yazmaya başlamaktır!
 
 ### Output
 
-In the previous code snippet, we used `console.log(..)`. Briefly, let's look at what that line of code is all about.
+### Çıktı
 
-You may have guessed, but that's exactly how we print text (aka *output* to the user) in the developer console. There are two characteristics of that statement that we should explain.
+~~In the previous code snippet, we used `console.log(..)`. Briefly, let's look at what that line of code is all about.~~
 
-First, the `log( b )` part is referred to as a function call (see "Functions"). What's happening is we're handing the `b` variable to that function, which asks it to take the value of `b` and print it to the console.
+~~You may have guessed, but that's exactly how we print text (aka *output* to the user) in the developer console. There are two characteristics of that statement that we should explain.~~
 
-Second, the `console.` part is an object reference where the `log(..)` function is located. We cover objects and their properties in more detail in Chapter 2.
+~~First, the `log( b )` part is referred to as a function call (see "Functions"). What's happening is we're handing the `b` variable to that function, which asks it to take the value of `b` and print it to the console.~~
 
-Another way of creating output that you can see is to run an `alert(..)` statement. For example:
+~~Second, the `console.` part is an object reference where the `log(..)` function is located. We cover objects and their properties in more detail in Chapter 2.~~
+
+~~Another way of creating output that you can see is to run an `alert(..)` statement. For example:~~
+
+Bir önceki örnekte, `console.log(..)` komutunu kullandık. Gelin bu tek satırlık kodun ne anlama geldiğine bakalım.
+
+Tahmin ettiğiniz gibi, bu komut bir metni geliştirici konsoluna yazdırmanızı (kullanıcıya bir *çıktı* gösterilmesini) sağlıyor. Bu ifadede açıklamamız gereken iki  özellik bulunuyor.
+
+Birincisi, `log(b)` bölümü fonksiyon çagrısı olarak tanımlanır (bknz. "Fonksiyonlar"). Burada yaptığımız, `b` değişkenini fonksiyona teslim etmek. Fonksiyon `b` değişkeninin sakladığı değeri alıp konsola yazdırır.
+
+İkincisi, `.log(..)` fonksiyonunun bulunduugu objeye referans veren `console.` bölümüdür. Objeler ve özelliklerini 2. Bölümde daha ayrıntılı inceleyeceğiz.
+
+Görebileceğiniz bir çıktı oluşturmanın başka bir yolu da `alert(..)` komutunu kullanmaktır. Örneğin:
 
 ```js
 alert( b );
@@ -205,7 +236,12 @@ If you run that, you'll notice that instead of printing the output to the consol
 
 For this book, we'll use `console.log(..)` for output.
 
+Bu satırı çalıştırdığınızda konsola çıktıyı yazdırmak yerine `b` değişkeninin değerinini içeren bir açılır pencerenin açıldığını göreceksiniz. Yine de öğrenme aşamasında `console.log(..)` kullanımı `alert(..)` kullanımından daha kolay gelecektir zira bu yöntemle bir çok değerin çktısını tarayıcı arayüzünü engellemeden alabilirsiniz.
+
+Bu kitapta çıktı almak için `console.log(..)`u kullanacağız.
+
 ### Input
+
 
 While we're discussing output, you may also wonder about *input* (i.e., receiving information from the user).
 
