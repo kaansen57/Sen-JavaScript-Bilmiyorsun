@@ -49,7 +49,7 @@ a = b * 2;
 
 ~~The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.~~
 
-'a' ve 'b' karakterlerine *değişken* (bknz. *Değişkenler*) adı verilir. Değişkenleri, içlerinde istediğiniz şeyleri saklayabileceğiniz basit kutulara benzetebiliriz. Programlarda değişkenler program tarafından kullanılacak olan değerleri (örneğin 42 sayısı) saklar. Bunların sembolik olarak değerlerin yerini tuttuğunu düşünebilirsiniz.  
+'a' ve 'b' karakterlerine *değişken* (bknz. *Değişkenler*) adı verilir. Değişkenleri, içlerinde istediğiniz şeyleri saklayabileceğiniz basit kutulara benzetebiliriz. Programlarda değişkenler program tarafından kullanılacak olan değerleri (örneğin `42` sayısı) saklar. Bunların sembolik olarak değerlerin yerini tuttuğunu düşünebilirsiniz.  
 
 ~~By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.~~
 
@@ -57,7 +57,7 @@ Bunların aksine '2' değerin kendisidir ve *literal değer* adını alır çün
 
 ~~The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.~~
 
-'=' ve '*' karakterlerine *operatör* (bknz. "Operatörler") denir. Operatörler literal değerler ve değişkenlerle atama ve matematiksel çarpım gibi işlemler gerçekleştirir.
+`=` ve `*` karakterlerine *operatör* (bknz. "Operatörler") denir. Operatörler literal değerler ve değişkenlerle atama ve matematiksel çarpım gibi işlemler gerçekleştirir.
 
 ~~Most statements in JavaScript conclude with a semicolon (`;`) at the end.~~
 
@@ -65,7 +65,7 @@ Javascript'deki deyimlerin çoğu noktalı virgül (;) ile sonlandırılır.
 
 ~~The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.~~
 
-'a = b * 2;' ifadesi bilgisayara kabaca 'b' değişkeninde şu anda saklı olan değeri '2' ile çarpıp, sonucu 'a' adındaki ikinci bir değişkende saklamasını söyler. 
+ `a = b * 2;` ifadesi bilgisayara kabaca `b` değişkeninde şu anda saklı olan değeri `2` ile çarpıp, sonucu `a` adındaki ikinci bir değişkende saklamasını söyler. 
 
 ~~Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.~~
 
@@ -98,12 +98,12 @@ a = b * 2;
 
 Bu deyim dört ifadeden oluşmaktadır:
 
-* '2' bir *literal değer ifadesi*
-* 'b' şu anki değerini saklayan bir *değişken ifadesi*
-* 'b * 2' çarpma işlemini anlatan bir *aritmetik ifade*
-* 'a = b * 2' , 'b * 2' ifadesinin sonucunu 'a' değişkenine atayan *atama ifadesidir* (atama hakkında daha fazla bilgi sonraki bölümlerde verilecektir)
+* `2` bir *literal değer ifadesi*
+* `b` şu anki değerini saklayan bir *değişken ifadesi*
+* `b * 2 ` çarpma işlemini anlatan bir *aritmetik ifade*
+*  `a = b * 2` ,  `b * 2` ifadesinin sonucunu `a` değişkenine atayan *atama ifadesidir* (atama hakkında daha fazla bilgi sonraki bölümlerde verilecektir)
 
-A general expression that stands alone is also called an *expression statement*, such as the following:
+~~A general expression that stands alone is also called an *expression statement*, such as the following:~~
 
 Aşağıdaki gibi bir değişkene atanmayan genel ifadelere *ifade deyimi* denir:
 
@@ -113,9 +113,9 @@ b * 2;
 
 ~~This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- it would retrieve the value of `b` and multiply it by `2`, but then wouldn't do anything with that result.~~
 
-Bu tarz ifade deyimleri çok yaygın kullanılmamaktadır zira  programın gidişatına etki etmezler. Burada 'b' değişkeninde saklnanan değer '2' ile çarpılmaktadır fakat daha sonra elde edilen sonuç iler bir şey yapılmamaktadır. 
+Bu tarz ifade deyimleri çok yaygın kullanılmamaktadır zira  programın gidişatına etki etmezler. Burada 'b' değişkeninde saklnanan değer `2` ile çarpılmaktadır fakat daha sonra elde edilen sonuç iler bir şey yapılmamaktadır. 
 
-A more common expression statement is a *call expression* statement (see "Functions"), as the entire statement is the function call expression itself:
+~~A more common expression statement is a *call expression* statement (see "Functions"), as the entire statement is the function call expression itself:~~
 
 Kullanımı genel olan bir başka ifade deyimi çeşidi de "çağrı ifadesi" deyimidir (bknz. "Fonksiyonlar"). Deyimin tamamı fonksiyonel çağrı ifadesinin kendisidir: 
 
@@ -125,29 +125,51 @@ alert( a );
 
 ### Executing a Program
 
-How do those collections of programming statements tell the computer what to do? The program needs to be *executed*, also referred to as *running the program*.
+### Bir Programın Çalıştırılması
 
-Statements like `a = b * 2` are helpful for developers when reading and writing, but are not actually in a form the computer can directly understand. So a special utility on the computer (either an *interpreter* or a *compiler*) is used to translate the code you write into commands a computer can understand.
+~~How do those collections of programming statements tell the computer what to do? The program needs to be *executed*, also referred to as *running the program*.~~
 
-For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is run, which is usually called *interpreting* the code.
+~~Statements like `a = b * 2` are helpful for developers when reading and writing, but are not actually in a form the computer can directly understand. So a special utility on the computer (either an *interpreter* or a *compiler*) is used to translate the code you write into commands a computer can understand.~~
 
-For other languages, the translation is done ahead of time, called *compiling* the code, so when the program *runs* later, what's running is actually the already compiled computer instructions ready to go.
+~~For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is run, which is usually called *interpreting* the code.~~
 
-It's typically asserted that JavaScript is *interpreted*, because your JavaScript source code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually *compiles* the program on the fly and then immediately runs the compiled code.
+~~For other languages, the translation is done ahead of time, called *compiling* the code, so when the program *runs* later, what's running is actually the already compiled computer instructions ready to go.~~
 
-**Note:** For more information on JavaScript compiling, see the first two chapters of the *Scope & Closures* title of this series.
+~~It's typically asserted that JavaScript is *interpreted*, because your JavaScript source code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually *compiles* the program on the fly and then immediately runs the compiled code.~~
+
+~~**Note:** For more information on JavaScript compiling, see the first two chapters of the *Scope & Closures* title of this series.~~
+
+Peki bu bahsettiğimiz ifadelerin bir araya gelmesiyle bilgisayar ne yapacağını nereden anlıyor? Programın *çalıştırılması*, aynı zamanda *programı koşturmak* olarak da bilinir, gerekiyor.
+
+`a = b * 2` gibi deyimler developerların okuması ve yazması aşamasında yardımcıdır fakat bilgisayarın doğrudan anlayabileceği bir yapıda değildir. Bu yüzden bilgisayarda bu amaçla özelleştirilmiş yardımcı programlar bulunmaktadır (*yorumlayıcı* veya *derleyici* ). Bunlar bizim yazdığımız kodun bilgisayarın anlayabileceği dile çevrilmesinde kullanılmaktadır. 
+
+Bazı bilgisayar dillerinde bu komutların çevirisi işlemi yukarıdan aşağı, satır satır, program her çalıştırıldığında yapılmaktadır. Bu işleme kodun *yorumlanması* denir.
+
+Başka dillerde, bu çeviri program çalıştırılmadan önce gerçekleşmektedir ve buna kodu *derlemek* denir. Bu aşamada çalıştırılan program derlenmiş ve bilgisayar tarafından yerine getirilmeye hazır talimatlardan oluşmaktadır.
+
+Javascript *yorumlanan* bir dil olarak kabul görmektedir zira yazdığınız kod her çalıştırdığınızda proses edilir. Fakat bu tam olarak doğru değildir. JavaScript motoru programı çalıştırır çalıştırmaz *derler* ve anında derlenmiş kodu çalıştırır.
+
+**Not:** JavaScipt'in derlenmesi konusunda daha fazla bilgiyi bu serinin *Değişkenin Tanım Alanı ve Kaplamlar* başlığı altında bulabilirsiniz.
 
 ## Try It Yourself
 
-This chapter is going to introduce each programming concept with simple snippets of code, all written in JavaScript (obviously!).
+## Kendin Dene
 
-It cannot be emphasized enough: while you go through this chapter -- and you may need to spend the time to go over it several times -- you should practice each of these concepts by typing the code yourself. The easiest way to do that is to open up the developer tools console in your nearest browser (Firefox, Chrome, IE, etc.).
+~~This chapter is going to introduce each programming concept with simple snippets of code, all written in JavaScript (obviously!).~~
 
-**Tip:** Typically, you can launch the developer console with a keyboard shortcut or from a menu item. For more detailed information about launching and using the console in your favorite browser, see "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). To type multiple lines into the console at once, use `<shift> + <enter>` to move to the next new line. Once you hit `<enter>` by itself, the console will run everything you've just typed.
+Bu bölüm programlama kavramlarını kısa kod parçaları ile tanıtacaktır. Kodların hepsi (tahmin edileceği üzere) JavaScrit ile yazılmıştır.
+
+~~It cannot be emphasized enough: while you go through this chapter -- and you may need to spend the time to go over it several times -- you should practice each of these concepts by typing the code yourself. The easiest way to do that is to open up the developer tools console in your nearest browser (Firefox, Chrome, IE, etc.).~~
+
+~~**Tip:** Typically, you can launch the developer console with a keyboard shortcut or from a menu item. For more detailed information about launching and using the console in your favorite browser, see "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). To type multiple lines into the console at once, use `<shift> + <enter>` to move to the next new line. Once you hit `<enter>` by itself, the console will run everything you've just typed.~~
 
 Let's get familiar with the process of running code in the console. First, I suggest opening up an empty tab in your browser. I prefer to do this by typing `about:blank` into the address bar. Then, make sure your developer console is open, as we just mentioned.
 
 Now, type this code and see how it runs:
+
+Bölümde ilerlerken, yeterince açıklayıcı olmadığını düşündüğünüz kısımları bir kaç defa tekrarlama gereği duyabilirsiniz. Bu kısımları kendiniz yazarak denemeniz de size yardımcı olacaktır. Bunu yapmanın en kolay yolu size en yakın tarayıcıda geliştirici araçları konsolunu açmaktır (Firefox, Chrome, IE, vb.).
+
+**İpucu:** Genelde geliştirici araçları konsolunu klavyeden bir kısayol tuşu ile açabileceğiniz gibi bir menü elemanından da başlatabilirsiniz. Konsolun çalıştırılması ve kullanımı hakkında daha ayrıntılı bilgi için (http://blog.teamtreehouse.com/mastering-developer-tools-console) adresinde bulunan "Mastering The Developer Tools Console" a bakabilirsiniz. Konsolda bir seferde birden fazla satır yazabilmek için `<shift> + <enter>` kullanarak yeni satıra geçebilirsiniz. Yalnız `<enter>` tuşuna basmanız durumunda konsole yazdıgınız satırı çalıştıracaktır.
 
 ```js
 a = 21;
