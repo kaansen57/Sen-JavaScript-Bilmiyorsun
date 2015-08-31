@@ -7,66 +7,117 @@ Welcome to the *You Don't Know JS* (*YDKJS*) series.
 
 This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.
 
-Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
+~~Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.~~
 
-Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!
+Bölüm 1 ilerde öğrenmek ve egzersiz yapmak istediğiniz konular hakkında genel bir bakış sağlıyor. Programlamaya giriş konusunda size destek sağlayabilecek güzel bir çok başka kaynak bulunmaktadır ve size bunları bu  *Giriş* bölümünü okurken destek olarak kullanmanızı öneririm.
 
-If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse of what to expect from *YDKJS*, then jump right in!
+~~Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!~~
+
+Temel programlama kavramlarını kavradığınız zaman,  Bölüm 2 sizi Javascript ile daha yakından tanıştıracaktır. Bu 2. bölüm Javascript dilinin ne hakkında olduğu konusunda bir giriş niteliğindedir. Daha kapsamlı konuları bu kitabı izleyen *YDKJS* serilerinde bulabilirsiniz. 
+
+~~If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse of what to expect from *YDKJS*, then jump right in!~~
+
+Eğer halihazırda Javascript diline aşinalığınız var ise *YDKJS* kitabından ne bekleyebileceğinizi anlamak için 3. bölüme göz attıktan sonra direkt başlayabilirsiniz.
 
 ## Code
 
-Let's start from the beginning.
+## Kod
 
-A program, often referred to as *source code* or just *code*, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.
+~~Let's start from the beginning.~~
 
-The rules for valid format and combinations of instructions is called a *computer language*, sometimes referred to as its *syntax*, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.
+Gelin en başından başlayalım.
+
+~~A program, often referred to as *source code* or just *code*, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.~~
+
+Sıklıkla  *kaynak kodu* veya sadece *kod* olarak da tabir edilen program, bilgisayarın gerçekleştireceği görevleri aktaran özel komut dizisidir.
+
+~~The rules for valid format and combinations of instructions is called a *computer language*, sometimes referred to as its *syntax*, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.~~
+
+Komutların geçerli format ve kombinasyonlarını içeren kurallar *bilgisayar dili*, bazen de o dilin *sentaks*ı, olarak bilinir. Sentaks kelimesinden anlaşılacağı üzere bu kurallar İngilizce'de kelimelerin nasıl okunacağını veya bu kelimelerden nasıl cümle kurulacağını belirleyen kurallar bütünlüğü ile benzerlik gösterir.
 
 ### Statements
 
-In a computer language, a group of words, numbers, and operators that performs a specific task is a *statement*. In JavaScript, a statement might look as follows:
+### Deyimler
+
+~~In a computer language, a group of words, numbers, and operators that performs a specific task is a *statement*. In JavaScript, a statement might look as follows:~~
+
+Bir bilgisayar dilinde, spesifik bir görevi yerine getiren operatör, sayı ve kelimelerden oluşan gruba *deyim* denir. Javascript'de bir ifade aşağıdaki gibi gösterilebilir:
 
 ```js
 a = b * 2;
 ```
 
-The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.
+~~The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.~~
 
-By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.
+'a' ve 'b' karakterlerine *değişken* (bknz. *Değişkenler*) adı verilir. Değişkenleri, içlerinde istediğiniz şeyleri saklayabileceğiniz basit kutulara benzetebiliriz. Programlarda değişkenler program tarafından kullanılacak olan değerleri (örneğin 42 sayısı) saklar. Bunların sembolik olarak değerlerin yerini tuttuğunu düşünebilirsiniz.  
 
-The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.
+~~By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.~~
 
-Most statements in JavaScript conclude with a semicolon (`;`) at the end.
+Bunların aksine '2' değerin kendisidir ve *literal değer* adını alır çünkü herhangi bir değişkende depolanmadan direkt kendisi kullanılır. 
 
-The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.
+~~The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.~~
 
-Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.
+'=' ve '*' karakterlerine *operatör* (bknz. "Operatörler") denir. Operatörler literal değerler ve değişkenlerle atama ve matematiksel çarpım gibi işlemler gerçekleştirir.
+
+~~Most statements in JavaScript conclude with a semicolon (`;`) at the end.~~
+
+Javascript'deki deyimlerin çoğu noktalı virgül (;) ile sonlandırılır.
+
+~~The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.~~
+
+'a = b * 2;' ifadesi bilgisayara kabaca 'b' değişkeninde şu anda saklı olan değeri '2' ile çarpıp, sonucu 'a' adındaki ikinci bir değişkende saklamasını söyler. 
+
+~~Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.~~
+
+(1)Programlar,bir araya geldiklerinde programın amacını yerine getirebilmesi için gereken adımları betimleyen ifadeler topluluğudur.
+
+(2)Bu ve bunun gibi, programın amacını yerine getirebilmesi için bütün adımları betimleyebilen ifadeler topluluguna program denir.
 
 ### Expressions
 
-Statements are made up of one or more *expressions*. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators.
+### İfadeler
 
-For example:
+~~Statements are made up of one or more *expressions*. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators.~~
+
+~~For example:~~
+
+Deyimler bir veya birden fazla *ifade*den oluşur. Bir değişkene veya değere referans olan herşey bir ifadedir. Aynı zamanda bu değer ve değişkenlerin operatörlerle oluşturdukları kombinasyonlar da birer ifadedir.
+
+Örnek:
 
 ```js
 a = b * 2;
 ```
 
-This statement has four expressions in it:
+~~This statement has four expressions in it:~~
 
-* `2` is a *literal value expression*
-* `b` is a *variable expression*, which means to retrieve its current value
-* `b * 2` is an *arithmetic expression*, which means to do the multiplication
+~~* `2` is a *literal value expression*
+~~* `b` is a *variable expression*, which means to retrieve its current value
+~~* `b * 2` is an *arithmetic expression*, which means to do the multiplication
 * `a = b * 2` is an *assignment expression*, which means to assign the result of the `b * 2` expression to the variable `a` (more on assignments later)
 
+Bu deyim dört ifadeden oluşmaktadır:
+
+* '2' bir *literal değer ifadesi*
+* 'b' şu anki değerini saklayan bir *değişken ifadesi*
+* 'b * 2' çarpma işlemini anlatan bir *aritmetik ifade*
+* 'a = b * 2' , 'b * 2' ifadesinin sonucunu 'a' değişkenine atayan *atama ifadesidir* (atama hakkında daha fazla bilgi sonraki bölümlerde verilecektir)
+
 A general expression that stands alone is also called an *expression statement*, such as the following:
+
+Aşağıdaki gibi bir değişkene atanmayan genel ifadelere *ifade deyimi* denir:
 
 ```js
 b * 2;
 ```
 
-This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- it would retrieve the value of `b` and multiply it by `2`, but then wouldn't do anything with that result.
+~~This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- it would retrieve the value of `b` and multiply it by `2`, but then wouldn't do anything with that result.~~
+
+Bu tarz ifade deyimleri çok yaygın kullanılmamaktadır zira  programın gidişatına etki etmezler. Burada 'b' değişkeninde saklnanan değer '2' ile çarpılmaktadır fakat daha sonra elde edilen sonuç iler bir şey yapılmamaktadır. 
 
 A more common expression statement is a *call expression* statement (see "Functions"), as the entire statement is the function call expression itself:
+
+Kullanımı genel olan bir başka ifade deyimi çeşidi de "çağrı ifadesi" deyimidir (bknz. "Fonksiyonlar"). Deyimin tamamı fonksiyonel çağrı ifadesinin kendisidir: 
 
 ```js
 alert( a );
