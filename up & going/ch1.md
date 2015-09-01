@@ -294,26 +294,44 @@ Süreci basit tutmak adına biz temel programlama kavramlarını öğrenmekteyiz
 
 ## Operators
 
-Operators are how we perform actions on variables and values. We've already seen two JavaScript operators, the `=` and the `*`.
+## İşleçler
 
-The `*` operator performs mathematic multiplication. Simple enough, right?
+~~Operators are how we perform actions on variables and values. We've already seen two JavaScript operators, the `=` and the `*`.~~
 
-The `=` equals operator is used for *assignment* -- we first calculate the value on the *right-hand side* (source value) of the `=` and then put it into the variable that we specify on the *left-hand side* (target variable).
+~~The `*` operator performs mathematic multiplication. Simple enough, right?~~
 
-**Warning:** This may seem like a strange reverse order to specify assignment. Instead of `a = 42`, some might prefer to flip the order so the source value is on the left and the target variable is on the right, like `42 -> a` (this is not valid JavaScript!). Unfortunately, the `a = 42` ordered form, and similar variations, is quite prevalent in modern programming languages. If it feels unnatural, just spend some time rehearsing that ordering in your mind to get accustomed to it.
+~~The `=` equals operator is used for *assignment* -- we first calculate the value on the *right-hand side* (source value) of the `=` and then put it into the variable that we specify on the *left-hand side* (target variable).~~
 
-Consider:
+İşleçler (operators) değişken ve değerlerle işlemler yapmamızı sağlarlar. Biz şuana kadar iki JavaScript işleçi ile karşılaştık, `=` ve `*`.
+
+`*` işleci matematiksel çarpım işlemini gerçekleştirir. Gayet basit, öyle değil mi?
+
+`=` işleci *atama* işlemi için kullanılır. Öncelilkle `=`ın *sağ tarafındaki* değer (kaynak değer) hesaplanır daha sonra *sol tarafındaki* değişkene aktarılır.
+
+~~**Warning:** This may seem like a strange reverse order to specify assignment. Instead of `a = 42`, some might prefer to flip the order so the source value is on the left and the target variable is on the right, like `42 -> a` (this is not valid JavaScript!). Unfortunately, the `a = 42` ordered form, and similar variations, is quite prevalent in modern programming languages. If it feels unnatural, just spend some time rehearsing that ordering in your mind to get accustomed to it.~~
+
+~~Consider:~~
+
+**Dikkat:** Bu atama şekli ters bir sırayla yapılıyor gözükebilir. `a = 42` yerine, `42 -> a` şeklinde  kaynak değerin yerini sol tarafa alıp hedef değişkeni sağ tarafta tutmak aklınıza daha çok yatabilir (bu gösterim JavaScript'de geçerli değildir!). Maalesef,  `a = 42` şeklindeki ve benzeri gösterimler modern programlama dillerinde son derece yaygındır. Eğer hala aklınıza yatmadıysa bu gösterim üzerine biraz zaman harcayıp alışabilirsiniz.
+
+Örneğin:
 
 ```js
 a = 2;
 b = a + 1;
 ```
 
-Here, we assign the `2` value to the `a` variable. Then, we get the value of the `a` variable (still `2`), add `1` to it resulting in the value `3`, then store that value in the `b` variable.
+~~Here, we assign the `2` value to the `a` variable. Then, we get the value of the `a` variable (still `2`), add `1` to it resulting in the value `3`, then store that value in the `b` variable.~~
 
-While not technically an operator, you'll need the keyword `var` in every program, as it's the primary way you *declare* (aka *create*) *var*iables (see "Variables").
+~~While not technically an operator, you'll need the keyword `var` in every program, as it's the primary way you *declare* (aka *create*) *var*iables (see "Variables").~~
 
-You should always declare the variable by name before you use it. But you only need to declare a variable once for each *scope* (see "Scope"); it can be used as many times after that as needed. For example:
+~~You should always declare the variable by name before you use it. But you only need to declare a variable once for each *scope* (see "Scope"); it can be used as many times after that as needed. For example:~~
+
+Bu örnekte `2` değerini `a` değişkenine atıyoruz. Daha sonra `a` değişkeninde tuttuğumuz değere (hala `2`) `3` sonucunu vermek üzere `1` ekliyoruz. Elde ettiğimiz değeri `b` değişkenine atıyoruz.
+
+Teknik olarak işleç olmamakla beraber her programda kullanmanız gerekecek birr anahtar kelime vardır, `var`. Bu *değiken* *tanımlama*nın (başka bir deyişle *yaratma*nın) birincil yoludur (burada kullanılan *var* İngilizcedeki *variable*dan gelmektedir).
+
+Kullanacağınız değişkenleri her zaman önceden isim vererek tanımlamalısınız. Bu tanımlamaları değişkeni kullanacağınız her *değişkenin tanım alanı*  (bknz. *Değişkenin Tanım Alanı*) için bir kere yapmanız gerekir. Değişkeni tanımladıktan sonra değişkeni istediğiniz kadar kullanabilirsiniz. Örneğin:
 
 ```js
 var a = 20;
@@ -324,26 +342,45 @@ a = a * 2;
 console.log( a );	// 42
 ```
 
-Here are some of the most common operators in JavaScript:
+~~Here are some of the most common operators in JavaScript:~~
 
-* Assignment: `=` as in `a = 2`.
-* Math: `+` (addition), `-` (subtraction), `*` (multiplication), and `/` (division), as in `a * 3`.
-* Compound Assignment: `+=`, `-=`, `*=`, and `/=` are compound operators that combine a math operation with assignment, as in `a += 2` (same as `a = a + 2`).
-* Increment/Decrement: `++` (increment), `--` (decrement), as in `a++` (similar to `a = a + 1`).
-* Object Property Access: `.` as in `console.log()`.
+~~Assignment: `=` as in `a = 2`.~~
+~~Math: `+` (addition), `-` (subtraction), `*` (multiplication), and `/` (division), as in `a * 3`.~~
+~~Compound Assignment: `+=`, `-=`, `*=`, and `/=` are compound operators that combine a math operation with assignment, as in `a += 2` (same as `a = a + 2`).~~
+~~Increment/Decrement: `++` (increment), `--` (decrement), as in `a++` (similar to `a = a + 1`).~~
+~~Object Property Access: `.` as in `console.log()`.~~
 
-   Objects are values that hold other values at specific named locations called properties. `obj.a` means an object value called `obj` with a property of the name `a`. Properties can alternatively be accessed as `obj["a"]`. See Chapter 2.
-* Equality: `==` (loose-equals), `===` (strict-equals), `!=` (loose not-equals), `!==` (strict not-equals), as in `a == b`.
+   ~~Objects are values that hold other values at specific named locations called properties. `obj.a` means an object value called `obj` with a property of the name `a`. Properties can alternatively be accessed as `obj["a"]`. See Chapter 2.~~
+~~Equality: `==` (loose-equals), `===` (strict-equals), `!=` (loose not-equals), `!==` (strict not-equals), as in `a == b`.~~
 
-   See "Values & Types" and Chapter 2.
-* Comparison: `<` (less than), `>` (greater than), `<=` (less than or loose-equals), `>=` (greater than or loose-equals), as in `a <= b`.
+   ~~See "Values & Types" and Chapter 2.~~
+~~Comparison: `<` (less than), `>` (greater than), `<=` (less than or loose-equals), `>=` (greater than or loose-equals), as in `a <= b`.~~
 
-   See "Values & Types" and Chapter 2.
-* Logical: `&&` (and), `||` (or), as in `a || b` that selects either `a` *or* `b`.
+   ~~See "Values & Types" and Chapter 2.~~
+~~Logical: `&&` (and), `||` (or), as in `a || b` that selects either `a` *or* `b`.
 
-   These operators are used to express compound conditionals (see "Conditionals"), like if either `a` *or* `b` is true.
+   These operators are used to express compound conditionals (see "Conditionals"), like if either `a` *or* `b` is true.~~
 
-**Note:** For much more detail, and coverage of operators not mentioned here, see the Mozilla Developer Network (MDN)'s "Expressions and Operators" (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
+Aşağıdakiler JavaScript'de en çok kullanılan işleçlerdir:
+* Atama: `=`, örnek kullanımı `a = 2` şeklinde.
+* Matematiksel: `+` (toplama), `-` (çıkarma), `*` (çarpma), ve `/` (bölme), örnek kullanımı  `a * 3` şeklinde.
+* Birleşik Aritmetik İşleçler:  `+=`, `-=`, `*=`, ve `/=` matematiksel işleci atama işleci ile birleştiren işleçlerdir, örnek kullanımı `a += 2` (`a = a + 2` ile aynı anlama gelir) şeklinde.
+* Arttırma ve Azaltme İşleçleri: `++` (arttırma), `--` (azaltma), örnek kullanımı `a++` (`a = a + 1` ile aynı işlemi gerçelşetirir) şeklinde.
+* Obje Özelliğine Ulaşma: `.`, örnek kullanımı `console.log()` şeklinde.
+
+	Objeler, özellik adı verilen isimlendirimiş yerlerde değer tutma özelliğine sahip değerlerdir. `obj.a` gösterimi, `obj` adındaki obje değerinin  `a` adındaki özelliği anlamına gelir. Bu gösterime alternatif olarak  `obj["a"]` gösterimi de kullanılabilir. Bölüm 2'ye bakınız.
+* Eşitlik: `==` (serbest eşitlik), `===` (katı eşitlik), `!=` (serbest eşit değildir), `!==` (katı eşit değildir), örnek kullanımı `a == b` şeklinde.
+
+	Bölüm 2'de "Değerler & Türler"e bakınız.
+* Karşıalştırma: `<` (küçüktür), `>` (büyüktür), `<=`(küçük ya da eşittir), `>=` (büyük ya da eşittir), kullanımı `a <= b` şeklinde.
+
+
+	Bölüm 2'de "Değerler & Türler"e bakınız.
+* Mantıksal: `&&` (ve), `||` (veya), kullanımı `a || b` şeklinde olup `a` *veya* `b` değişkeninden birini seçer.
+
+~~**Note:** For much more detail, and coverage of operators not mentioned here, see the Mozilla Developer Network (MDN)'s "Expressions and Operators" (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).~~
+
+**Not:** Burada bahsedilmemiş işleçler hakkında daha kapsamlı bilgi için  Mozilla Developer Network (MDN)'de bulunan "İfadeler ve İşleçler" ("Expressions and Operators") konusuna bakabilirsiniz (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
 
 ## Values & Types
 
