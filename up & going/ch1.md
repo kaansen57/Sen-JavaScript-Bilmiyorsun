@@ -194,7 +194,7 @@ b = a * 2;
 console.log( b );
 ```
 
-Typing the preceding code into the console in Chrome should produce something like the following:
+~~Typing the preceding code into the console in Chrome should produce something like the following:~~
 
 Üstteki kodu konsola yazdığınız zaman Chrome aşağıdaki gibi bir sonuç üretmeli:
 
@@ -242,12 +242,20 @@ Bu kitapta çıktı almak için `console.log(..)`u kullanacağız.
 
 ### Input
 
+### Girdi
 
-While we're discussing output, you may also wonder about *input* (i.e., receiving information from the user).
+~~ we're discussing output, you may also wonder about *input* (i.e., receiving information from the user).~~
 
-The most common way that happens is for the HTML page to show form elements (like text boxes) to a user that they can type into, and then using JS to read those values into your program's variables.
+~~ most common way that happens is for the HTML page to show form elements (like text boxes) to a user that they can type into, and then using JS to read those values into your program's variables.~~
 
-But there's an easier way to get input for simple learning and demonstration purposes such as what you'll be doing throughout this book. Use the `prompt(..)` function:
+~~But there's an easier way to get input for simple learning and demonstration purposes such as what you'll be doing throughout this book. Use the `prompt(..)` function:~~
+
+Biz çıktı kavramını açıklarken siz *girdi*nin (kullanıcıdan bilgi eldesi) ne olduğunu merak ediyor olabilirsiniz.
+
+Bunun en yaygın yöntemi HTML formu aracılığı ile kullanıcıya veri girişi yapabileceği bir alan (metin kutusu gibi) göstermektir. Daha sonra JS kullanarak bu değerleri değişkenlere atamkatır.
+
+Fakat basit öğrenme ve uygulama aşamasında kullanılması daha kolay başka bir yöntem daha bulunmaktadır. Bu da `prompt(..)` fonksiyonudur:
+
 
 ```js
 age = prompt( "Please tell me your age:" );
@@ -255,17 +263,31 @@ age = prompt( "Please tell me your age:" );
 console.log( age );
 ```
 
-As you may have guessed, the message you pass to `prompt(..)` -- in this case, `"Please tell me your age:"` -- is printed into the popup.
+```js
+yas = prompt( "Lütfen yaşınızı giriniz:" );
 
-This should look similar to the following:
+console.log( yas );
+```
+
+~~As you may have guessed, the message you pass to `prompt(..)` -- in this case, `"Please tell me your age:"` -- is printed into the popup.~~
+
+~~This should look similar to the following:~~
+
+Tahmin edeceğiniz gibi `prompt(..)`a aktardığınız mesaj -- bu durumda, `"Lütfen yaşınızı giriniz:"`-- açılır pencerede yazdırılmıştr.
+
+Bu aşağıdakine gibi gözükmelidir:
 
 <img src="fig2.png" width="500">
 
-Once you submit the input text by clicking "OK," you'll observe that the value you typed is stored in the `age` variable, which we then *output* with `console.log(..)`:
+~~Once you submit the input text by clicking "OK," you'll observe that the value you typed is stored in the `age` variable, which we then *output* with `console.log(..)`:~~
+
+Girdi metnini "OK" butonuna basarak gönderdiğiniz zaman, yazdığınız değerin `yas` değişkeninde saklandığını gözlemleyebilirsiniz. Daha sonra `console.log(..)` kullanarak bunun çıktısını aldık.
 
 <img src="fig3.png" width="500">
 
 To keep things simple while we're learning basic programming concepts, the examples in this book will not require input. But now that you've seen how to use `prompt(..)`, if you want to challenge yourself you can try to use input in your explorations of the examples.
+
+Süreci basit tutmak adına biz temel programlama kavramlarını öğrenmekteyiz. Bu kitapta yer alan örneklerde girdiye ihtiyaç durulmayacktır.
 
 ## Operators
 
