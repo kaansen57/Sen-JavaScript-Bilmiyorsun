@@ -384,13 +384,21 @@ Aşağıdakiler JavaScript'de en çok kullanılan işleçlerdir:
 
 ## Values & Types
 
-If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine, ninety-nine" (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll need to pay (plus taxes) to buy it. If you want to buy two of those phones, you can easily do the mental math to double that value to get $199.98 for your base cost.
+## Değerler & Tipler
 
-If that same employee picks up another similar phone but says it's "free" (perhaps with air quotes), they're not giving you a number, but instead another kind of representation of your expected cost ($0.00) -- the word "free."
+~~If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine, ninety-nine" (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll need to pay (plus taxes) to buy it. If you want to buy two of those phones, you can easily do the mental math to double that value to get $199.98 for your base cost.~~
+
+~~If that same employee picks up another similar phone but says it's "free" (perhaps with air quotes), they're not giving you a number, but instead another kind of representation of your expected cost ($0.00) -- the word "free."~~
+
+Bir telefon mağzasında belli bir telefonun fiyatını sorduğunuzda, size  "doksan dokuz, doksan dokuz" (99.99TRY) dedikleri zaman size Türk Lirası cinsinden bir adet telefon almak için ödemeniz gereken miktarı sayı cinsinden söylediklerini bilirsiniz. Eğer bu telefondan iki adet almak isterseniz öedemeniz gereken tutarı basitçe tek telefon fiyatını iki ile çarparak elde edebilirsiniz. 
+
+Fakat aynı çalışan başka bir telefonu gösterip ücretsiz olduğunu söylerse artık size bir sayıdan bahsediyor olmaz. Beklenen tutar (0.00TRY) artık "ücretsiz" olarak tasvir edilmektedir.
 
 When you later ask if the phone includes a charger, that answer could only have been either "yes" or "no."
 
 In very similar ways, when you express values in a programs, you choose different representations for those values based on what you plan to do with them.
+
+Eğer daha sonra telefonun şarj aleti içerip içermediğini sorarsanız bu soruların cevabı ya "evet" veya "hayır"
 
 These different representations for values are called *types* in programming terminology. JavaScript has built-in types for each of these so called *primitive* values:
 
