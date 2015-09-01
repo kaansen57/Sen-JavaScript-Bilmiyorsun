@@ -1,6 +1,6 @@
 # You Don't Know JS: Up & Going
 
-# Sen JS Bilmiyorsun: Giriş
+# Sen JS Bilmiyorsun: Giriş ve İlerleme
 
 # Chapter 1: Into Programming
 
@@ -12,7 +12,7 @@
 
 ~~*Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.~~
 
-*Giriş* programlamanın temel kavramlarına bir giriş yapmaktadır -- bunu yaparken Javascript programlama dilini (sıklıkla JS olarak kısaltılmaktadır) özellikle ağırlıklı olarak kullanacağız -- aynı zamanda sonraki bölüm ve seriler hakkında bilgi ve oryantasyon sağlamaktadır. Özellikle de eğer programlamaya ve/veya JavaScript diline yeni iseniz bu kitap bu alana *Giriş*  yapabilmeniz için size gerekenleri özetleyecektir.
+*Giriş ve İlerleme* programlamanın temel kavramlarına bir giriş yapmaktadır -- bunu yaparken Javascript programlama dilini (sıklıkla JS olarak kısaltılmaktadır) özellikle ağırlıklı olarak kullanacağız -- aynı zamanda sonraki bölüm ve seriler hakkında bilgi ve oryantasyon sağlamaktadır. Özellikle de eğer programlamaya ve/veya JavaScript diline yeni iseniz bu kitap bu alana *Giriş ve İlerleme*  yapabilmeniz için size gerekenleri özetleyecektir.
 
 ~~This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.~~
 
@@ -20,7 +20,7 @@ Bu kitap programlamanın temel kavramlarını ileri düzeyde anlatarak başlamak
 
 ~~Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.~~
 
-Bölüm 1 ilerde öğrenmek ve egzersiz yapmak istediğiniz konular hakkında genel bir bakış sağlıyor. Programlamaya giriş konusunda size destek sağlayabilecek güzel bir çok başka kaynak bulunmaktadır ve size bunları bu  *Giriş* bölümünü okurken destek olarak kullanmanızı öneririm.
+Bölüm 1 ilerde öğrenmek ve egzersiz yapmak istediğiniz konular hakkında genel bir bakış sağlıyor. Programlamaya giriş konusunda size destek sağlayabilecek güzel bir çok başka kaynak bulunmaktadır ve size bunları bu  *Giriş ve İlerleme* bölümünü okurken destek olarak kullanmanızı öneririm.
 
 ~~Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!~~
 
@@ -102,10 +102,13 @@ a = b * 2;
 
 ~~This statement has four expressions in it:~~
 
-~~* `2` is a *literal value expression*
-~~* `b` is a *variable expression*, which means to retrieve its current value
-~~* `b * 2` is an *arithmetic expression*, which means to do the multiplication
-* `a = b * 2` is an *assignment expression*, which means to assign the result of the `b * 2` expression to the variable `a` (more on assignments later)
+~~`2` is a *literal value expression*~~
+
+~~`b` is a *variable expression*, which means to retrieve its current value~~
+
+~~`b * 2` is an *arithmetic expression*, which means to do the multiplication~~
+
+~~`a = b * 2` is an *assignment expression*, which means to assign the result of the `b * 2` expression to the variable `a` (more on assignments later)~~
 
 Bu deyim dört ifadeden oluşmaktadır:
 
@@ -232,9 +235,9 @@ Görebileceğiniz bir çıktı oluşturmanın başka bir yolu da `alert(..)` kom
 alert( b );
 ```
 
-If you run that, you'll notice that instead of printing the output to the console, it shows a popup "OK" box with the contents of the `b` variable. However, using `console.log(..)` is generally going to make learning about coding and running your programs in the console easier than using `alert(..)`, because you can output many values at once without interrupting the browser interface.
+~~If you run that, you'll notice that instead of printing the output to the console, it shows a popup "OK" box with the contents of the `b` variable. However, using `console.log(..)` is generally going to make learning about coding and running your programs in the console easier than using `alert(..)`, because you can output many values at once without interrupting the browser interface.~~
 
-For this book, we'll use `console.log(..)` for output.
+~~For this book, we'll use `console.log(..)` for output.~~
 
 Bu satırı çalıştırdığınızda konsola çıktıyı yazdırmak yerine `b` değişkeninin değerinini içeren bir açılır pencerenin açıldığını göreceksiniz. Yine de öğrenme aşamasında `console.log(..)` kullanımı `alert(..)` kullanımından daha kolay gelecektir zira bu yöntemle bir çok değerin çktısını tarayıcı arayüzünü engellemeden alabilirsiniz.
 
@@ -285,7 +288,7 @@ Girdi metnini "OK" butonuna basarak gönderdiğiniz zaman, yazdığınız değer
 
 <img src="fig3.png" width="500">
 
-To keep things simple while we're learning basic programming concepts, the examples in this book will not require input. But now that you've seen how to use `prompt(..)`, if you want to challenge yourself you can try to use input in your explorations of the examples.
+~~To keep things simple while we're learning basic programming concepts, the examples in this book will not require input. But now that you've seen how to use `prompt(..)`, if you want to challenge yourself you can try to use input in your explorations of the examples.~~
 
 Süreci basit tutmak adına biz temel programlama kavramlarını öğrenmekteyiz. Bu kitapta yer alan örneklerde girdiye ihtiyaç durulmayacktır.
 
