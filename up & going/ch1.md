@@ -384,7 +384,7 @@ Aşağıdakiler JavaScript'de en çok kullanılan işleçlerdir:
 
 ## Values & Types
 
-## Değerler & Tipler
+## Değerler & Türler
 
 ~~If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine, ninety-nine" (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll need to pay (plus taxes) to buy it. If you want to buy two of those phones, you can easily do the mental math to double that value to get $199.98 for your base cost.~~
 
@@ -394,21 +394,32 @@ Bir telefon mağzasında belli bir telefonun fiyatını sorduğunuzda, size  "do
 
 Fakat aynı çalışan başka bir telefonu gösterip ücretsiz olduğunu söylerse artık size bir sayıdan bahsediyor olmaz. Beklenen tutar (0.00TRY) artık "ücretsiz" olarak tasvir edilmektedir.
 
-When you later ask if the phone includes a charger, that answer could only have been either "yes" or "no."
+~~When you later ask if the phone includes a charger, that answer could only have been either "yes" or "no."~~
 
-In very similar ways, when you express values in a programs, you choose different representations for those values based on what you plan to do with them.
+~~In very similar ways, when you express values in a programs, you choose different representations for those values based on what you plan to do with them.~~
 
-Eğer daha sonra telefonun şarj aleti içerip içermediğini sorarsanız bu soruların cevabı ya "evet" veya "hayır"
+Eğer daha sonra telefonun şarj aleti içerip içermediğini sorarsanız bu sorunun cevabı "evet" veya "hayır" olabilir.
 
-These different representations for values are called *types* in programming terminology. JavaScript has built-in types for each of these so called *primitive* values:
+~~These different representations for values are called *types* in programming terminology. JavaScript has built-in types for each of these so called *primitive* values:~~
 
-* When you need to do math, you want a `number`.
-* When you need to print a value on the screen, you need a `string` (one or more characters, words, sentences).
-* When you need to make a decision in your program, you need a `boolean` (`true` or `false`).
+~~When you need to do math, you want a `number`.~~
+~~When you need to print a value on the screen, you need a `string` (one or more characters, words, sentences).~~
+~~When you need to make a decision in your program, you need a `boolean` (`true` or `false`).~~
 
-Values that are included directly in the source code are called *literals*. `string` literals are surrounded by double quotes `"..."` or single quotes (`'...'`) -- the only difference is stylistic preference. `number` and `boolean` literals are just presented as is (i.e., `42`, `true`, etc.).
+~~Values that are included directly in the source code are called *literals*. `string` literals are surrounded by double quotes `"..."` or single quotes (`'...'`) -- the only difference is stylistic preference. `number` and `boolean` literals are just presented as is (i.e., `42`, `true`, etc.).~~
 
-Consider:
+~~Consider:~~
+
+Programlama terminolojisinde değerlerin  bu şekilde farklı temsil edildikleri özelliklere *tür* adı verilir. Javascript'de  her *temel değeri*in sahip olduğu gömülü tür vardır:
+
+* Matematiksel işlemler yapmak istediğnizde kullanacağınız `number`.
+* Ekrana yazı yazdırmak istediğnizde kullanacağınız tür `string` (bir veya birden fazla karakter, kelime, cümle).
+* Programınızda bir karar vermek istediğinizde kullanacağınız tür `boolan` (`true` veya `false`).
+
+Kaynak koduna direkt olarak dahil edilen değerlere *literal* değerler denir. `string` literalleri çift tırnak  `"..."` veya tek tırnak (`'...'`) içerisine alınıp kullanılabilir. Bu iki gösterim arasındaki tek fark biçimseldir. `number` ve `boolean` literalleri oldukları gibi, tırnak içine alınmadan yazılır (örnek olarak `42`, true vb.).
+
+Örnek olarak:
+
 
 ```js
 "I am a string";
@@ -420,9 +431,12 @@ true;
 false;
 ```
 
-Beyond `string`/`number`/`boolean` value types, it's common for programming languages to provide *arrays*, *objects*, *functions*, and more. We'll cover much more about values and types throughout this chapter and the next.
+~~Beyond `string`/`number`/`boolean` value types, it's common for programming languages to provide *arrays*, *objects*, *functions*, and more. We'll cover much more about values and types throughout this chapter and the next.~~
+
+`string`/`number`/`boolean` değer türlerinde başka programlama dillerinde *array*, *object*, *function*  kullanımı da oldukça yaygındır. Bu ve sonraki bölümlerde değerler ve türler konusunu daha kapsamlı bir şekilde ele alacağız. 
 
 ### Converting Between Types
+
 
 If you have a `number` but need to print it on the screen, you need to convert the value to a `string`, and in JavaScript this conversion is called "coercion." Similarly, if someone enters a series of numeric characters into a form on an ecommerce page, that's a `string`, but if you need to then use that value to do math operations, you need to *coerce* it to a `number`.
 
