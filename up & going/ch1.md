@@ -433,14 +433,19 @@ false;
 
 ~~Beyond `string`/`number`/`boolean` value types, it's common for programming languages to provide *arrays*, *objects*, *functions*, and more. We'll cover much more about values and types throughout this chapter and the next.~~
 
-`string`/`number`/`boolean` değer türlerinde başka programlama dillerinde *array*, *object*, *function*  kullanımı da oldukça yaygındır. Bu ve sonraki bölümlerde değerler ve türler konusunu daha kapsamlı bir şekilde ele alacağız. 
+`string`/`number`/`boolean` değer türlerinden başka programlama dillerinde *array*, *object*, *function*  kullanımı da oldukça yaygındır. Bu ve sonraki bölümlerde değerler ve türler konusunu daha kapsamlı bir şekilde ele alacağız. 
 
 ### Converting Between Types
 
+### Türler Arası Dönüşümler
 
-If you have a `number` but need to print it on the screen, you need to convert the value to a `string`, and in JavaScript this conversion is called "coercion." Similarly, if someone enters a series of numeric characters into a form on an ecommerce page, that's a `string`, but if you need to then use that value to do math operations, you need to *coerce* it to a `number`.
+~~If you have a `number` but need to print it on the screen, you need to convert the value to a `string`, and in JavaScript this conversion is called "coercion." Similarly, if someone enters a series of numeric characters into a form on an ecommerce page, that's a `string`, but if you need to then use that value to do math operations, you need to *coerce* it to a `number`.~~
 
-JavaScript provides several different facilities for forcibly coercing between *types*. For example:
+~~JavaScript provides several different facilities for forcibly coercing between *types*. For example:~~
+
+Eğer `number` türünde bir değeriniz varsa ve bunu ekrana yazdırmak istiyorsanız bu değeri `string` türüne çevirmeniz gerekir. JavaScript'de bu dönüşüme "coercion" denir. Aynı şekilde kişinin bir eticaret sitesinde form doldururken girdiği sayı karakteri dizisi de `string` türündedir. Fakat daha sonra bu değerleri matematiksel işlemler kullanmayı düşünüyorsanız bu değer serisini `number` türüne çevirmeniz gerekir.
+
+JavaScript'in *tür* arası çevrimleri katı kurallara göre gerçekleştirdiği bir kaç yöntem var. Örnek olarak:
 
 ```js
 var a = "42";
@@ -450,21 +455,37 @@ console.log( a );	// "42"
 console.log( b );	// 42
 ```
 
-Using `Number(..)` (a built-in function) as shown is an *explicit* coercion from any other type to the `number` type. That should be pretty straightforward.
+~~Using `Number(..)` (a built-in function) as shown is an *explicit* coercion from any other type to the `number` type. That should be pretty straightforward.~~
 
-But a controversial topic is what happens when you try to compare two values that are not already of the same type, which would require *implicit* coercion.
+~~But a controversial topic is what happens when you try to compare two values that are not already of the same type, which would require *implicit* coercion.~~
 
-When comparing the string `"99.99"` to the number `99.99`, most people would agree they are equivalent. But they're not exactly the same, are they? It's the same value in two different representations, two different *types*. You could say they're "loosely equal," couldn't you?
+~~When comparing the string `"99.99"` to the number `99.99`, most people would agree they are equivalent. But they're not exactly the same, are they? It's the same value in two different representations, two different *types*. You could say they're "loosely equal," couldn't you?~~
 
-To help you out in these common situations, JavaScript will sometimes kick in and *implicitly* coerce values to the matching types.
+~~To help you out in these common situations, JavaScript will sometimes kick in and *implicitly* coerce values to the matching types.~~
 
-So if you use the `==` loose equals operator to make the comparison `"99.99" == 99.99`, JavaScript will convert the left-hand side `"99.99"` to its `number` equivalent `99.99`. The comparison then becomes `99.99 == 99.99`, which is of course `true`.
+Yukarıdaki kod parçasında kullanılan `Number(..)` (gömülü fonksiyon) herhangi bir türden `number` türüne *explicit* (veri kaybı yaşanabilecek çevrim) bir çevrim sağlar. Görüğünüz gibi son derece basit.
 
-While designed to help you, implicit coercion can create confusion if you haven't taken the time to learn the rules that govern its behavior. Most JS developers never have, so the common feeling is that implicit coercion is confusing and harms programs with unexpected bugs, and should thus be avoided. It's even sometimes called a flaw in the design of the language.
+Burada daha kafa karıştırıcı olan konu aynı tür olamayan değerlerin  birbirleriyle nasıl karşılaştırılacağıdır. Bu durumda kullanılacak yöntem *implicit*, veri kaybı yaşanmaayan, çeviri türüdür.
 
-However, implicit coercion is a mechanism that *can be learned*, and moreover *should be learned* by anyone wishing to take JavaScript programming seriously. Not only is it not confusing once you learn the rules, it can actually make your programs better! The effort is well worth it.
+String türündeki `"99.99"` değerini number türündeki `"99.99"` ile karşılaştırdığımızda çoğu insan bu değerlerin birbirine eşit olduğunu düşünür. Fakat bunlar birbirlerinden oldukça farklı değerlerdir. Bu, aynı değerin farklı türlerdeki gösterimidir. Bunların daha serbest kurallar çerçevesinde eşit olduklarını söleyebiliriz, değil mi?
 
-**Note:** For more information on coercion, see Chapter 2 of this title and Chapter 4 of the *Types & Grammar* title of this series.
+Böyle durumlarda size yardımcı olabilmek için JavaScript bazı durumlarda *implicitly* karşılaştırma yapmanızı sağlayacaktır.
+
+~~So if you use the `==` loose equals operator to make the comparison `"99.99" == 99.99`, JavaScript will convert the left-hand side `"99.99"` to its `number` equivalent `99.99`. The comparison then becomes `99.99 == 99.99`, which is of course `true`.~~
+
+~~While designed to help you, implicit coercion can create confusion if you haven't taken the time to learn the rules that govern its behavior. Most JS developers never have, so the common feeling is that implicit coercion is confusing and harms programs with unexpected bugs, and should thus be avoided. It's even sometimes called a flaw in the design of the language.~~
+
+~~However, implicit coercion is a mechanism that *can be learned*, and moreover *should be learned* by anyone wishing to take JavaScript programming seriously. Not only is it not confusing once you learn the rules, it can actually make your programs better! The effort is well worth it.~~
+
+~~**Note:** For more information on coercion, see Chapter 2 of this title and Chapter 4 of the *Types & Grammar* title of this serie.~~
+
+Mesela serbest eşitlik operatörü olan `==`i `"99.99" == 99.99` eşitliğinde kullanırsanız, JavaScript sol tarafta bulunan `"99.99"`u `number` türündeki karşılığı olan `99.99`a çevirir. Eşitlik `99.99 == 99.99` olarak değişmiştir. Burada iki tarafın eşit olduğu, yani sonucun `true` olduğu açıktır.
+
+Her ne kadar size yadımcı olsun diye tasarlanmış olsa da "implicit" çevirmenin operasyon kurallarını bilmemeniz karışıklığa sebep olacaktır. JS gelişticilerinin çoğu bu kuralları öğrenmek için gerekli zamanı ayırmadıkları için implicit çevirinin karmaşık olduğu ve programlara beklenmeyen buglarla (hatalarla) zarar verdiği gerekçeleriyle kullanımından kaçınılması gerektiği tarzında genel bir yargıya varmışlardır. Hatta bazen, bu durumdan programlama dilinin tasarımındaki "kusur" olarak da bahsedilir.
+
+Halbuki, implicit çeviri *öğrenilebilen* ve JavaScript dilinde programlamayı ciddiye alan herkesin *öğrenmesi gerektiği* bir mekanizmadır. Kurallarını öğrendikten sonra kafa karışıtırıcı olmadığını hatta programlarınızı daha iyi yazdığınızı göreceksiniz. Harcayacağınız emek buna fazlasıyla değecektir.
+
+**Not:** Çevirmeler hakkında daha fazla bilgi için bu serinin Bölüm 2'deki aynı başlığına ve Bölüm 4'de ye alan *Türler ve Gramer* başlığına bakabilirsiniz.
 
 ## Code Comments
 
