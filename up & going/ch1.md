@@ -489,15 +489,27 @@ Halbuki, implicit çeviri *öğrenilebilen* ve JavaScript dilinde programlamayı
 
 ## Code Comments
 
-The phone store employee might jot down some notes on the features of a newly released phone or on the new plans her company offers. These notes are only for the employee -- they're not for customers to read. Nevertheless, these notes help the employee do her job better by documenting the hows and whys of what she should tell customers.
+## Kod Açıklamarı
 
-One of the most important lessons you can learn about writing code is that it's not just for the computer. Code is every bit as much, if not more, for the developer as it is for the compiler.
+~~The phone store employee might jot down some notes on the features of a newly released phone or on the new plans her company offers. These notes are only for the employee -- they're not for customers to read. Nevertheless, these notes help the employee do her job better by documenting the hows and whys of what she should tell customers.~~
 
-Your computer only cares about machine code, a series of binary 0s and 1s, that comes from *compilation*. There's a nearly infinite number of programs you could write that yield the same series of 0s and 1s. The choices you make about how to write your program matter -- not only to you, but to your other team members and even to your future self.
+~~One of the most important lessons you can learn about writing code is that it's not just for the computer. Code is every bit as much, if not more, for the developer as it is for the compiler.~~
 
-You should strive not just to write programs that work correctly, but programs that make sense when examined. You can go a long way in that effort by choosing good names for your variables (see "Variables") and functions (see "Functions").
+~~Your computer only cares about machine code, a series of binary 0s and 1s, that comes from *compilation*. There's a nearly infinite number of programs you could write that yield the same series of 0s and 1s. The choices you make about how to write your program matter -- not only to you, but to your other team members and even to your future self.~~
 
-But another important part is code comments. These are bits of text in your program that are inserted purely to explain things to a human. The interpreter/compiler will always ignore these comments.
+Telefon dükkanındaki çalışan yeni çıkan bir telefonun özelliklerini veya şirketlerinin sunduğu yeni kampanyaları bir yere not etmek isteyebilir. Bu notlar çalışanın müşteriye aktarması gereken neden ve nasıl sorularının cevaplarını içeren, çalışana yardımcı niteliğinde notlardır. Bunlar sadece çalışanı hedef alan, müşterilerin okuması için yazılmamış notlardır.
+
+Kod yazmak hakkında öğrenmeniz gereken en öenmli şey yazılan kodların sadece bilgisayarlara hitab etmediğidir. Yorumlayıcı (compiler) için olduğu kadar geliştiriciler için de yazılmaktadır. 
+
+Bilgisayarınız sadece derleme aşamasından sonra oluşan 1ler ve 0lardan meydana gelen  makine kodu ile ilgilenir. Çıktı olarak aynı 0-1 serisini verebilecek çok sayıda program vardır. Nasıl program yazacağınız konusunda yapacağınız seçimler sadece sizin için değil, sizin takım arkadaşlarınız ve hatta gelecekteki siz için önemlidir.  
+
+~~You should strive not just to write programs that work correctly, but programs that make sense when examined. You can go a long way in that effort by choosing good names for your variables (see "Variables") and functions (see "Functions").~~
+
+~~But another important part is code comments. These are bits of text in your program that are inserted purely to explain things to a human. The interpreter/compiler will always ignore these comments.~~
+
+Yazdığınız kodun sadece düzgün çalışıyor değil, aynı zamanda incelendiği zaman da anlaşılabilir olması gerekir. Bu yolda değişken (bknz. "Değişkenler") ve fonksiyonların (bknz. "Fonksiyonlar") adlandırılması aşaması zorlayıcı olabilir.
+
+Bir diğer önemli nokta ise kod açıklamalarıdır. Bunlar insanlara birşeyler açıklamak amacıyla yazılmış basit, okunaklı metinlerdir. Derleyici (compiler)/yorumlayıcı (interpreter) bunları her zaman için ihmal edecektir.
 
 There are lots of opinions on what makes well-commented code; we can't really define absolute universal rules. But some observations and guidelines are quite useful:
 
@@ -508,6 +520,14 @@ There are lots of opinions on what makes well-commented code; we can't really de
 In JavaScript, there are two types of comments possible: a single-line comment and a multiline comment.
 
 Consider:
+
+İyi açıklanmış kodun hangi özelliklere sahip olması konusunda farklı fikirler vardır. Bu özelliklerin evrensel olduğundan bahsedilemeyecek olsa da bazı gözlem ve  öneriler son derece yararlıdır:
+
+* Açıklama içermeyen kod standart altıdır.
+* Çok fazla sayıda açıklama (örneğin her kod satırı için bir açıklama) yetersiz yazılmış kodun göstergesidir.
+* Açıklamar *ne* değil *neden* sorularını açıklamalıdır. İsteğe bağlı olarak *nasıl* açıklaması da kopmlike yerler için kullanılabilir.
+
+Örnek olarak:
 
 ```js
 // This is a single-line comment
