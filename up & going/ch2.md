@@ -1,28 +1,46 @@
-# You Don't Know JS: Up & Going
-# Chapter 2: Into JavaScript
+~~# You Don't Know JS: Up & Going # Chapter 2: Into JavaScript~~
 
-In the previous chapter, I introduced the basic building blocks of programming, such as variables, loops, conditionals, and functions. Of course, all the code shown has been in JavaScript. But in this chapter, we want to focus specifically on things you need to know about JavaScript to get up and going as a JS developer.
+# JavaScript Bilmiyorsun: Giriş ve İlerleme
+# Bölüm 2: JavaScript'e Giriş
 
-We will introduce quite a few concepts in this chapter that will not be fully explored until subsequent *YDKJS* books. You can think of this chapter as an overview of the topics covered in detail throughout the rest of this series.
+~~In the previous chapter, I introduced the basic building blocks of programming, such as variables, loops, conditionals, and functions. Of course, all the code shown has been in JavaScript. But in this chapter, we want to focus specifically on things you need to know about JavaScript to get up and going as a JS developer.~~
 
-Especially if you're new to JavaScript, you should expect to spend quite a bit of time reviewing the concepts and code examples here multiple times. Any good foundation is laid brick by brick, so don't expect that you'll immediately understand it all the first pass through.
+Önceki bölümde; değişkenler, döngüler, koşullar ve fonksiyonlar gibi programlamanın temel yapı taşlarından bahsettim. Bu bölümde ise JavaScript geliştiricisi olmak için öğrenmen gereken; daha spesifik konulara yoğunlaşacağım. 
 
-Your journey to deeply learn JavaScript starts here.
+~~We will introduce quite a few concepts in this chapter that will not be fully explored until subsequent *YDKJS* books. You can think of this chapter as an overview of the topics covered in detail throughout the rest of this series.~~
 
-**Note:** As I said in Chapter 1, you should definitely try all this code yourself as you read and work through this chapter. Be aware that some of the code here assumes capabilities introduced in the newest version of JavaScript at the time of this writing (commonly referred to as "ES6" for the 6th edition of ECMAScript -- the official name of the JS specification). If you happen to be using an older, pre-ES6 browser, the code may not work. A recent update of a modern browser (like Chrome, Firefox, or IE) should be used.
+Bu bölümde gelecek kitaplara kadar çok fazla değinmeyeceğim bazı konseptleri tanıtacağım. Bu bölüme gelecekte daha detaylı işlenecek konuların bir önizlemesi olarak bakabilirsin.
 
-## Values & Types
+~~Especially if you're new to JavaScript, you should expect to spend quite a bit of time reviewing the concepts and code examples here multiple times. Any good foundation is laid brick by brick, so don't expect that you'll immediately understand it all the first pass through.~~
 
-As we asserted in Chapter 1, JavaScript has typed values, not typed variables. The following built-in types are available:
+Özellikle JavaScript'te yeniysen konseptleri ve kod örneklerini tam olarak kavramak için birkaç defa göz atman gerektiğini göz önünde bulundurmalısın. İyi bir temel yalnızca tuğlaları teker teker yerleştirerek kurulur. Bu yüzden herşeyi bir anda anlamayı beklememelisin.
+
+~~Your journey to deeply learn JavaScript starts here.~~
+
+JavaScript'i derinlemesine anlama serüvenin burada başlıyor.
+
+~~**Note:** As I said in Chapter 1, you should definitely try all this code yourself as you read and work through this chapter. Be aware that some of the code here assumes capabilities introduced in the newest version of JavaScript at the time of this writing (commonly referred to as "ES6" for the 6th edition of ECMAScript -- the official name of the JS specification). If you happen to be using an older, pre-ES6 browser, the code may not work. A recent update of a modern browser (like Chrome, Firefox, or IE) should be used.~~
+
+**Not:** Birinci bölümde söylediğim gibi, buradaki tüm örnekleri kendin de çalıştırıp denemelisin. Ayrıca bazı örneklerin kitabın yazıldığı tarihte JavaScript'in son versiyonundaki (genel ismiyle "ES6" yani ECMAScript'in 6. sürümü -- JS spesifikasyonunun resmi adı) yeni özelliklerin çalıştığı varsayılarak yazıldığını hatırlatmak istiyorum. Eğer eski-ES6 desteklemeyen bir tarayıcı kullanıyorsan, kodlar çalışmayabilir. Modern bir tarayıcının(Chrome, Firefox, IE) son versiyonu kullanılmalıdır.
+
+~~## Values & Types~~
+
+## Değerler & Tipler
+
+~~As we asserted in Chapter 1, JavaScript has typed values, not typed variables. The following built-in types are available:~~
+
+İlk bölümde söylediğimiz gibi JavaScript typed(tipli) değerlere sahiptir; typed değişkenlere değil.
 
 * `string`
 * `number`
 * `boolean`
 * `null` and `undefined`
 * `object`
-* `symbol` (new to ES6)
+* `symbol` (ES6'da yeni)
 
-JavaScript provides a `typeof` operator that can examine a value and tell you what type it is:
+~~JavaScript provides a `typeof` operator that can examine a value and tell you what type it is:~~
+
+JavaScript bir değerin tipini öğrenebilmemiz için `typeof` operatörünü sağlar:
 
 ```js
 var a;
@@ -38,7 +56,7 @@ a = true;
 typeof a;				// "boolean"
 
 a = null;
-typeof a;				// "object" -- weird, bug
+typeof a;				// "object" -- Garip, bug
 
 a = undefined;
 typeof a;				// "undefined"
@@ -47,15 +65,25 @@ a = { b: "c" };
 typeof a;				// "object"
 ```
 
-The return value from the `typeof` operator is always one of six (seven as of ES6!) string values. That is, `typeof "abc"` returns `"string"`, not `string`.
+~~The return value from the `typeof` operator is always one of six (seven as of ES6!) string values. That is, `typeof "abc"` returns `"string"`, not `string`.~~
 
-Notice how in this snippet the `a` variable holds every different type of value, and that despite appearances, `typeof a` is not asking for the "type of `a`", but rather for the "type of the value currently in `a`." Only values have types in JavaScript; variables are just simple containers for those values.
+`typeof` operatörünün döndüğü değer(return value) her zaman bu altı (ES6 için yedi) string değerden biridir. Yani, `typeof "abc"` `"string"` döndürür, `string` değil.
 
-`typeof null` is an interesting case, because it errantly returns `"object"`, when you'd expect it to return `"null"`.
+~~Notice how in this snippet the `a` variable holds every different type of value, and that despite appearances, `typeof a` is not asking for the "type of `a`", but rather for the "type of the value currently in `a`." Only values have types in JavaScript; variables are just simple containers for those values.~~
 
-**Warning:** This is a long-standing bug in JS, but one that is likely never going to be fixed. Too much code on the Web relies on the bug and thus fixing it would cause a lot more bugs!
+Yukardaki kod parçasında `a` değişkenine tüm değişik tiplerdeki değerleri atadığımıza dikkat etmeni istiyorum. Gördüğün gibi `typeof a` `a` değişkeninin tipini değil, ona atanan değerin tipini sorguluyor.
 
-Also, note `a = undefined`. We're explicitly setting `a` to the `undefined` value, but that is behaviorally no different from a variable that has no value set yet, like with the `var a;` line at the top of the snippet. A variable can get to this "undefined" value state in several different ways, including functions that return no values and usage of the `void` operator.
+~~`typeof null` is an interesting case, because it errantly returns `"object"`, when you'd expect it to return `"null"`.~~
+
+`typeof null` ilginç bir durum, çünkü beklediğimiz sonuç `"null"` iken yanlış bir şekilde `"object"` sonucunu veriyor.
+
+~~**Warning:** This is a long-standing bug in JS, but one that is likely never going to be fixed. Too much code on the Web relies on the bug and thus fixing it would cause a lot more bugs!~~
+
+**Uyarı:** Bu JavaScript'te çok uzun zamandır var olan ve muhtemelen hiçbir zaman çözülmeyecek bir bug. Webdeki bir çok kod bu bugı temel alıyor ve bunun düzeltilmesi muhtemelen daha çok buga sebep olacak.  
+
+~~Also, note `a = undefined`. We're explicitly setting `a` to the `undefined` value, but that is behaviorally no different from a variable that has no value set yet, like with the `var a;` line at the top of the snippet. A variable can get to this "undefined" value state in several different ways, including functions that return no values and usage of the `void` operator.~~
+
+Son olarak kısaca `a = undefined`dan bahsetmek istiyorum. Burada `a`ya `undefined` değerini atıyoruz, fakat bu davranış olarak henüz hiç bir değer atanmamış bir değişken (`var a;` gibi) ile birebir aynıdır. Değişkenler bu "undefined" durumuna herhangi bir değer dönmeyen fonksiyonlar veya `void` operatörünün kullanılması gibi bazı koşullar altında sahip olabilirler.
 
 ### Objects
 
